@@ -66,4 +66,54 @@ const logoImg = document.getElementById('cta-img');
 logoImg.src = 'img/header-img.png';
 
 //logo title and button
+let Header = document.querySelector('h1');
+Header.textContent = 'DOM IS AWESOME';
+let Button = document.querySelector('button');
+Button.textContent = 'Get Started';
 
+//Set up info sections
+let features = document.querySelector('.text-content h4');
+features.textContent = 'Features';
+let featuresContent = document.querySelector('.text-content p');
+featuresContent.textContent = siteContent['main-content']['features-content'];
+
+let About = document.querySelectorAll('.text-content h4')[1];
+About.textContent = 'ABOUT';
+let AboutContent = document.querySelectorAll('.text-content p')[1];
+AboutContent.textContent = siteContent['main-content']['about-content'];
+
+let Services = document.querySelectorAll('.text-content h4')[2];
+Services.textContent = 'SERVICES';
+let ServicesContent = document.querySelectorAll('.text-content p')[2];
+ServicesContent.textContent = siteContent['main-content']['services-content'];
+
+let Product = document.querySelectorAll('.text-content h4')[3];
+Product.textContent = 'PRODUCT';
+let ProductContent = document.querySelectorAll('.text-content p')[3];
+ProductContent.textContent = siteContent['main-content']['product-content'];
+
+let Vision = document.querySelectorAll('.text-content h4')[4];
+Vision.textContent = 'VISION';
+let VisionContent = document.querySelectorAll('.text-content p')[4];
+VisionContent.textContent = siteContent['main-content']['vision-content'];
+
+//center image
+let midPic = document.querySelector('.middle-img');
+midPic.src = siteContent['main-content']['middle-img-src'];
+
+
+//footer
+let Contact = document.querySelector('.contact h4');
+Contact.textContent = 'CONTACT';
+
+let Address = document.querySelector('.contact p');
+Address.textContent = siteContent['contact']['address'];
+
+let Phone = document.querySelectorAll('.contact p')[1];
+Phone.textContent = siteContent['contact']['phone'];
+
+let Email = document.querySelectorAll('.contact p')[2];
+Email.textContent = siteContent['contact']['email'];
+
+let Copyright = document.querySelector('footer p');
+Copyright.textContent = siteContent['footer']['copyright'];
